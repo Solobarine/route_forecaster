@@ -14,8 +14,6 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-print("BASE_DIR")
-print(BASE_DIR)
 
 env = environ.Env(
     # Set default casting and values
@@ -25,6 +23,7 @@ environ.Env.read_env(BASE_DIR / ".env")
 
 # ENV Variables
 ORS_API_KEY = env("ORS_API_KEY")
+CLIENT_URL = env("CLIENT_URL")
 
 
 # Quick-start development settings - unsuitable for production
@@ -36,7 +35,7 @@ SECRET_KEY = 'django-insecure-bs$ef!t91h2@im422#84-@%)#swb@^6_8%znve9*j!k_wqqyv4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["route-forecaster-1.onrender.com", "localhost"]
 
 
 # Application definition
@@ -136,3 +135,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [CLIENT_URL]
