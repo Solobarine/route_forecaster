@@ -2,11 +2,9 @@
 import math
 import json
 import requests
-import folium
 
 from django.conf import settings
 from datetime import datetime, timedelta, timezone
-from folium import Element
 
 ORS_API_KEY = settings.ORS_API_KEY
 
