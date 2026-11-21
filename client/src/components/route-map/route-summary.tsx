@@ -1,4 +1,4 @@
-import type { RouteData } from "../types/route-map";
+import type { RouteData } from "../../types/route-map";
 
 export default function RouteSummary({
   route,

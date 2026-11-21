@@ -1,4 +1,4 @@
-import type { RiskLevel } from "../types/route-map";
+import type { RiskLevel } from "../../types/route-map";
 
 export default function ForecastSlider({
   hour,
