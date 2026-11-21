@@ -57,7 +57,9 @@ function parseCoordinate(
 }
 
 async function fetchRoutePlan(payload: PlanRequest): Promise<PlanResponse> {
-  const response = await fetch("http://localhost:8000/plan", {
+  const BACKEND_API = import.meta.env.VITE_BACKEND_API;
+
+  const response = await fetch(`${BACKEND_API}/plan`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
