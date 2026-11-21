@@ -1,5 +1,9 @@
 import { CircleMarker, Polyline } from "react-leaflet";
-import type { RiskLevel, RouteCheckpoint, RouteData } from "../types/route-map";
+import type {
+  RiskLevel,
+  RouteCheckpoint,
+  RouteData,
+} from "../../types/route-map";
 
 // Weather heatmap along the route corridor.
 export default function WeatherHeatmap({

@@ -1,6 +1,6 @@
 import { useMemo } from "react";
 import { useMap } from "react-leaflet";
-import type { RouteMapData } from "../types/route-map";
+import type { RouteMapData } from "../../types/route-map";
 
 export default function FitRoutes({
   data,

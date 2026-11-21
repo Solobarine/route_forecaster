@@ -1,10 +1,10 @@
 import { CircleMarker, Popup, Tooltip } from "react-leaflet";
-import type { RiskLevel } from "../types/results";
+import type { RiskLevel } from "../../types/results";
 import type {
   ForecastRisk,
   RouteCheckpoint,
   WeatherData,
-} from "../types/route-map";
+} from "../../types/route-map";
 
 function WeatherDetails({ weather }: { weather: WeatherData }) {
   return (

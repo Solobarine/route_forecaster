@@ -1,4 +1,4 @@
-import type { RouteData } from "../types/route-map";
+import type { RouteData } from "../../types/route-map";
 
 // Route visibility controls.
 export default function RouteVisibility({
